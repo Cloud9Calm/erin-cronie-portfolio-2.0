@@ -1,0 +1,59 @@
+@import '../../styles/partials/_variables';
+@import '../../styles/partials/_mixins';
+
+.header {
+    font-family: $comfortaa-font;
+    background: linear-gradient(to right, rgb(13, 64, 31), rgb(0, 0, 0));
+    color: white;
+    @include flex-header;
+    align-items: center;
+    justify-content: space-between;
+    @include tablet {
+        flex-direction: row;
+        height: 100px;
+    }
+
+    &__info {
+        @include flex-header;
+        align-items: center;
+        @include tablet {
+            flex-direction: row;
+            align-items: baseline;
+        }
+    }
+
+    &__title {
+        font-size: 2rem;
+        margin: 1rem;
+    }
+
+    &__subtitle {
+        border-bottom: .5px solid $border;
+        padding: .5rem 0;
+            @include tablet {
+                border-bottom: none;
+            }
+    }
+
+    &__nav-list {
+       @include flex-header;
+        @include tablet {
+            flex-direction: row;
+        }
+    }
+
+    &__nav-item {
+        padding: 1rem 2rem;
+        margin: .25rem;
+        transition: background-color 0.5s ease;
+        border: 3px solid transparent;
+        @include tablet {
+            margin: 0 2rem;
+            font-size: 1.5rem;
+        } &:hover {
+            background-color: rgba(2, 156, 56, 0.287);
+            border: 3px solid $border;
+            border-radius: 40px;
+        }
+    }
+}
