@@ -17,12 +17,18 @@
   flex-direction: column;
 }
 
+@mixin button-hover {
+  cursor: none;
+  border-radius: 40px;
+  box-shadow: inset 20rem 0 0 0 $dark-fill-color;
+  color: $text-color-light-hover;
+}
+
 @mixin light-theme {
   color: $text-color-light;
-  background: linear-gradient(to right, rgb(163, 215, 191) 10%, rgb(82, 161, 133) 100%);
-}
+  background-color: $background-color-light;}
 
 @mixin dark-theme {
   color: #{$text-color-dark};
-  background: linear-gradient(to right, rgb(20, 69, 47) 10%, rgb(29, 46, 40) 100%);
+  background-color: $background-color-dark;
 }

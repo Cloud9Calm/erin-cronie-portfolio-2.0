@@ -3,17 +3,17 @@
 $tablet-breakpoint: 48rem;
 $desktop-breakpoint: 80rem;
 
-$main-background-color: #000;
-$secondary-background-color: #0c594a;
-$main-font-color: #fff;
-$secondary-font-color: #9fed93;
-$border: #9e49ab;
+$dark-fill-color: #013328;
+$light-fill-color: #cc8b65;
 
 //light and dark mode
-$background-color-light: linear-gradient(to right, rgb(163, 215, 191) 10%, rgb(82, 161, 133) 100%);
-$text-color-light: #000000;
-$background-color-dark: linear-gradient(to right, rgb(20, 69, 47) 10%, rgb(29, 46, 40) 100%);
-$text-color-dark: #ffffff;
+$background-color-light: #e3dcd2;
+$text-color-light: #100c0d;
+$text-color-light-hover: #e3dcd2;
+
+$background-color-dark: #100c0d;
+$text-color-dark: #e3dcd2;
+$text-color-dark-hover: #100c0d;
 
 $comfortaa-font: 'Comfortaa','Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande';
 $roboto-font: 'Roboto','Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande'

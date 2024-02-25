@@ -48,13 +48,21 @@
         "duration": "October 2015 to October 2019"
       }
     ],
-    "interests": [
-      "Coding",
-      "Reading",
-      "Golf",
-      "Video Games",
-      "Wine",
-      "Cooking",
-      "Music"
+      "skills": [
+        "Programming Languages (e.g., JavaScript, TypeScript)",
+        "Web Development (HTML, CSS, JavaScript, React.js)",
+        "Software Development Life Cycle (SDLC)",
+        "Version Control (Git, GitHub)",
+        "Database Management (SQL, NoSQL)",
+        "Problem Solving",
+        "Critical Thinking",
+        "Project Management",
+        "Agile Methodologies (Scrum, Kanban)",
+        "Continuous Integration/Continuous Deployment (CI/CD)",
+        "Cloud Services (Google Cloud Platform)",
+        "RESTful API Design and Development",
+        "Unit Testing (Jest)",
+        "Effective Communication",
+        "Team Collaboration"
     ]
   }

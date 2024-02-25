@@ -7,7 +7,7 @@ const WorkExperience = () => {
     const [isVisible, setIsVisible] = useState({
         education: false,
         experience: false,
-        interests: false,
+        skills: false,
     });
 
     const toggleVisibility = (section) => {
@@ -51,22 +51,28 @@ const WorkExperience = () => {
                 </div>
                 {isVisible.experience && (
                     <ul className='work__list'>
-                        {resume.experience.map((exp, index) => (
-                            <li className='work__list-item' key={index}>{exp.jobTitle} at {exp.company}, {exp.duration}</li>
-                        ))}
-                    </ul>
+                    {resume.experience.map((exp, index) => (
+                        <li className='work__list-item' key={index}>
+                            <ul className="work__details-list">
+                                <li className="work__detail">Job Title: {exp.jobTitle}</li>
+                                <li className="work__detail">Company: {exp.company}</li>
+                                <li className="work__detail">Duration: {exp.duration}</li>
+                            </ul>
+                        </li>
+                    ))}
+                </ul>
                 )}
 
-                <div className='work__header' onClick={() => toggleVisibility('interests')}>
-                    <h3 className='work__interests'>Interests</h3>
+                <div className='work__header' onClick={() => toggleVisibility('skills')}>
+                    <h3 className='work__skills'>Skills</h3>
                     <DropDown
-                        className={`work__dropdown-icon ${isVisible.interests ? 'work__dropdown--open' : ''}`} 
-                        style={{ transform: isVisible.interests ? 'rotate(-90deg)' : 'rotate(0deg)', transition: 'transform 0.3s ease' }}  
+                        className={`work__dropdown-icon ${isVisible.skills ? 'work__dropdown--open' : ''}`} 
+                        style={{ transform: isVisible.skills ? 'rotate(-90deg)' : 'rotate(0deg)', transition: 'transform 0.3s ease' }}  
                     />
                 </div>
-                {isVisible.interests && (
+                {isVisible.skills && (
                     <ul className='work__list'>
-                        {resume.interests.map((interest, index) => (
+                        {resume.skills.map((interest, index) => (
                             <li className='work__list-item' key={index}>{interest}</li>
                         ))}
                     </ul>
