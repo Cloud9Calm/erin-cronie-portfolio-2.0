@@ -31,7 +31,7 @@ const WorkExperience = () => {
                     <h3 className='work__education'>Education</h3>
                     <DropDown
                         className={`dropdown-icon ${isVisible.education ? 'work__dropdown--open' : ''}`} 
-                        style={{ transform: isVisible.education ? 'rotate(25deg)' : 'rotate(0deg)', transition: 'transform 0.3s ease' }}  
+                        style={{ transform: isVisible.education ? 'rotate(-90deg)' : 'rotate(0deg)', transition: 'transform 0.3s ease' }}  
                     />
                 </div>
                 {isVisible.education && (
@@ -45,8 +45,8 @@ const WorkExperience = () => {
                 <div className='work__header' onClick={() => toggleVisibility('experience')}>
                     <h3 className='work__experience'>Experience</h3>
                     <DropDown
-                        className={`dropdown-icon ${isVisible.experience ? 'work__dropdown--open' : ''}`} 
-                        style={{ transform: isVisible.experience ? 'rotate(25deg)' : 'rotate(0deg)', transition: 'transform 0.3s ease' }}  
+                        className={`dropdown-icon ${isVisible.education ? 'work__dropdown--open' : ''}`} 
+                        style={{ transform: isVisible.education ? 'rotate(-90deg)' : 'rotate(0deg)', transition: 'transform 0.3s ease' }}  
                     />
                 </div>
                 {isVisible.experience && (
@@ -60,8 +60,8 @@ const WorkExperience = () => {
                 <div className='work__header' onClick={() => toggleVisibility('interests')}>
                     <h3 className='work__interests'>Interests</h3>
                     <DropDown
-                        className={`dropdown-icon ${isVisible.interests ? 'work__dropdown--open' : ''}`} 
-                        style={{ transform: isVisible.interests ? 'rotate(25deg)' : 'rotate(0deg)', transition: 'transform 0.3s ease' }}  
+                        className={`dropdown-icon ${isVisible.education ? 'work__dropdown--open' : ''}`} 
+                        style={{ transform: isVisible.education ? 'rotate(-90deg)' : 'rotate(0deg)', transition: 'transform 0.3s ease' }}  
                     />
                 </div>
                 {isVisible.interests && (
