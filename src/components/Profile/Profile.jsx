@@ -6,9 +6,7 @@ const Profile = () => {
     return (
         <section className='profile'>
             <Name />
-            <div className='profile__info'>
                 <h4 className='profile__title'>Software Developer</h4>
-            </div>
         </section>
     );
 }
