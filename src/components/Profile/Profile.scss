@@ -1,0 +1,56 @@
+@import '../../styles/partials/variables';
+@import '../../styles/partials/mixins';
+
+.profile {
+    background: linear-gradient(to right, rgb(20, 69, 47) 10%, rgb(29, 46, 40) 100%);
+    font-family: $roboto-font;
+    color: $main-font-color;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+        @include tablet {
+            align-items: baseline;
+        }
+
+
+    &__img {
+        height: 100px;
+        border-radius: 50%;
+        opacity: 80%;
+        border: 2px solid $border;
+        padding: .5rem;
+        @include tablet {
+            height: 200px;
+            opacity: 50%;
+        } &:hover {
+            opacity: 90%;
+        }
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+            @include tablet {
+                align-items: flex-start;
+            }
+            
+    }
+
+    &__name {
+        font-size: 1rem;
+        margin: .5rem;
+            @include tablet {
+                font-size: 3rem;
+            }
+    }
+
+    &__title {
+        font-size: .75rem;
+        margin: 0 1rem;
+            @include tablet {
+                font-size: 2rem;
+            }
+    }
+}

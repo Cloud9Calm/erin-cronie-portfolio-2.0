@@ -3,8 +3,8 @@
 
 .header {
     font-family: $comfortaa-font;
-    background: linear-gradient(to right, rgb(13, 64, 31), rgb(0, 0, 0));
-    color: white;
+    background: linear-gradient(to right, rgb(20, 69, 47) 10%, rgb(29, 46, 40) 100%);
+    color: $secondary-font-color;
     @include flex-header;
     align-items: center;
     justify-content: space-between;
@@ -51,7 +51,7 @@
             margin: 0 2rem;
             font-size: 1.5rem;
         } &:hover {
-            background-color: rgba(2, 156, 56, 0.287);
+            background-color: rgba(32, 109, 74, 0.565);
             border: 3px solid $border;
             border-radius: 40px;
         }
