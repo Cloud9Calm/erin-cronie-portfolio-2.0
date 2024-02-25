@@ -5,7 +5,7 @@ const Header = () => {
         <header className='header'>
             <div className='header__info'>
                 <h2 className='header__title'>
-                    Welcome!
+                    Welcome
                 </h2>
                 <h3 className='header__subtitle'>
                     erincronie.me
