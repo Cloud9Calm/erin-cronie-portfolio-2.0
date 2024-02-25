@@ -1,8 +1,10 @@
 import './Header.scss';
 import { useTheme } from '../../scripts/ThemeContext';
+import { ReactComponent as LightModeIcon } from '../../assets/images/LightMode.svg';
+import { ReactComponent as DarkModeIcon } from '../../assets/images/DarkMode.svg';
 
 const Header = () => {
-    const { toggleTheme } = useTheme();
+    const { theme, toggleTheme } = useTheme();
 
     return (
         <header className='header'>
@@ -21,7 +23,9 @@ const Header = () => {
                     <li className='header__nav-item'>Contact</li>
                 </ul>
             </nav>
-            <button onClick={toggleTheme}>Toggle Theme</button>
+            <button className='header__button' onClick={toggleTheme}>
+                {theme === 'light' ? <LightModeIcon /> : <DarkModeIcon />}
+            </button>
         </header>
     );
 }

@@ -55,4 +55,20 @@
             box-shadow: inset 200px 0 0 0 rgb(20, 69, 47);
         }
     }
+
+    &__button {
+        background-color: transparent;
+        border: none;
+    }
+}
+
+svg {
+    fill: $border;
+    height: 20px;
+    width: 20px;
+    margin: 1rem;
+        @include tablet {
+            height: 100px;
+            width: 100px;
+        }
 }
