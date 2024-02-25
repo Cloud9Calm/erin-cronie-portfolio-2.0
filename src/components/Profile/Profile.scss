@@ -10,7 +10,7 @@
     align-items: center;
     padding: 1rem;
         @include tablet {
-            align-items: baseline;
+            flex-direction: row;
         }
 
 
@@ -22,7 +22,7 @@
         padding: .5rem;
         @include tablet {
             height: 200px;
-            opacity: 50%;
+            opacity: 70%;
         } &:hover {
             opacity: 90%;
             box-shadow: 0 0 10px #ef10ff;
