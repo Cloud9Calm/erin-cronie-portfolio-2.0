@@ -19,14 +19,16 @@ const WorkExperience = () => {
 
     return (
         <section className='work'>
-            <h2 className='work__title' id="resume">Resume</h2>
-            <a 
-                href="/assets/Erin-Cronie-Resume.pdf" 
-                download="Erin-Cronie-Resume.pdf"
-                className='work__button'>
-                Download My Resume
-            </a>
-            <div className='work__section'>
+            <div className='work__button-section'>
+                <h2 className='work__title' id="resume">Resume</h2>
+                <a 
+                    href="/assets/Erin-Cronie-Resume.pdf" 
+                    download="Erin-Cronie-Resume.pdf"
+                    className='work__button'>
+                    Download My Resume
+                </a>
+            </div>
+            <div className='work__main-section'>
                 <div className='work__header' onClick={() => toggleVisibility('education')}>
                     <h3 className='work__education'>Education</h3>
                     <DropDown

@@ -1,12 +1,10 @@
 @import '../partials/variables';
 @import '../partials/mixins';
 
-* {
-  margin: 0;
-  padding: 0;
-}
 
 body {
+  margin: 1rem;
+  width: 95vw;
   &.light-theme {
     @include light-theme;
   }
