@@ -1,8 +1,11 @@
 @import '../../styles/partials/variables';
 @import '../../styles/partials/mixins';
 
-.animate-charcter
-{
+.container {
+  max-width: 1000px;
+}
+
+.animate-charcter {
     background-image: linear-gradient(
     -225deg,
     #100c0d 0%,

@@ -3,6 +3,7 @@
 
 .work {
     font-family: $roboto-font;
+    width: 80vw;
 
     &__button-section {
         display: flex;
@@ -66,6 +67,7 @@
     &__experience,
     &__skills {
         font-size: 1rem;
+        margin: 1rem;
             @include tablet {
                 font-size: 2rem;
             }

@@ -56,9 +56,9 @@ const WorkExperience = () => {
                     {resume.experience.map((exp, index) => (
                         <li className='work__list-item' key={index}>
                             <ul className="work__details-list">
-                                <li className="work__detail">Job Title: {exp.jobTitle}</li>
-                                <li className="work__detail">Company: {exp.company}</li>
-                                <li className="work__detail">Duration: {exp.duration}</li>
+                                <li className="work__detail">{exp.jobTitle}</li>
+                                <li className="work__detail">{exp.company}</li>
+                                <li className="work__detail">{exp.duration}</li>
                             </ul>
                         </li>
                     ))}
