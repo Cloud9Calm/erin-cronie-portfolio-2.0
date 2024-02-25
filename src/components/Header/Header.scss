@@ -3,8 +3,6 @@
 
 .header {
     font-family: $comfortaa-font;
-    background: linear-gradient(to right, rgb(20, 69, 47) 10%, rgb(29, 46, 40) 100%);
-    color: $secondary-font-color;
     @include flex-header;
     align-items: center;
     justify-content: space-between;
@@ -53,8 +51,23 @@
         } &:hover {
             cursor: none;
             border-radius: 40px;
-            color: #fff;
-            box-shadow: inset 200px 0 0 0 rgb(20, 69, 47);
+            box-shadow: inset 200px 0 0 0 rgb(31, 126, 84);
         }
     }
+
+    &__button {
+        background-color: transparent;
+        border: none;
+    }
+}
+
+svg {
+    fill: $border;
+    height: 20px;
+    width: 20px;
+    margin: 1rem;
+        @include tablet {
+            height: 100px;
+            width: 100px;
+        }
 }

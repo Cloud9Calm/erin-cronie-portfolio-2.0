@@ -1,5 +1,4 @@
 import './Profile.scss';
-import profImg from '../../assets/images/17_Erin-Cronie---Software-Engineering---Sep-2023.jpg';
 import Name from '../Name/Name'; 
 
 const Profile = () => {

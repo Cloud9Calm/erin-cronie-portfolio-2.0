@@ -1,6 +1,11 @@
 import './Header.scss';
+import { useTheme } from '../../scripts/ThemeContext';
+import { ReactComponent as LightModeIcon } from '../../assets/images/LightMode.svg';
+import { ReactComponent as DarkModeIcon } from '../../assets/images/DarkMode.svg';
 
 const Header = () => {
+    const { theme, toggleTheme } = useTheme();
+
     return (
         <header className='header'>
             <div className='header__info'>
@@ -18,6 +23,9 @@ const Header = () => {
                     <li className='header__nav-item'>Contact</li>
                 </ul>
             </nav>
+            <button className='header__button' onClick={toggleTheme}>
+                {theme === 'light' ? <LightModeIcon /> : <DarkModeIcon />}
+            </button>
         </header>
     );
 }

@@ -15,5 +15,14 @@
 @mixin flex-header {
   display: flex;
   flex-direction: column;
+}
 
+@mixin light-theme {
+  color: $text-color-light;
+  background: linear-gradient(to right, rgb(163, 215, 191) 10%, rgb(82, 161, 133) 100%);
+}
+
+@mixin dark-theme {
+  color: #{$text-color-dark};
+  background: linear-gradient(to right, rgb(20, 69, 47) 10%, rgb(29, 46, 40) 100%);
 }
