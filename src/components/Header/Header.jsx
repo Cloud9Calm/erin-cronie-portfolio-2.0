@@ -24,7 +24,7 @@ const Header = () => {
                 </ul>
             </nav>
             <button className='header__button' onClick={toggleTheme}>
-                {theme === 'light' ? <LightModeIcon /> : <DarkModeIcon />}
+                {theme === 'light' ? <LightModeIcon className="header__theme-icon" /> : <DarkModeIcon className="header__theme-icon"  />}
             </button>
         </header>
     );

@@ -49,6 +49,12 @@
             }
     }
 
+    &__dropdown-icon {
+        fill: $border;
+        height: 50px;
+        width: 50px;
+    }
+
     &__education,
     &__experience,
     &__interests {
@@ -62,8 +68,4 @@
     &__list-item {
         margin: 1rem;
     }
-}
-
-svg {
-    fill: white;
 }

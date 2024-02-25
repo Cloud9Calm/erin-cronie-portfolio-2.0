@@ -7,7 +7,6 @@
 }
 
 body {
-  background-color: red;
   &.light-theme {
     @include light-theme;
   }

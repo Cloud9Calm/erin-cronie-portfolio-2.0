@@ -59,15 +59,16 @@
         background-color: transparent;
         border: none;
     }
+
+    &__theme-icon  {
+        fill: $border;
+        height: 20px;
+        width: 20px;
+        margin: 1rem;
+            @include tablet {
+                height: 80px;
+                width: 80px;
+            }
+    }
 }
 
-svg {
-    fill: $border;
-    height: 20px;
-    width: 20px;
-    margin: 1rem;
-        @include tablet {
-            height: 100px;
-            width: 100px;
-        }
-}
