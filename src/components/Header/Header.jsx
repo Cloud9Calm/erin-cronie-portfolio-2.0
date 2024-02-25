@@ -1,6 +1,9 @@
 import './Header.scss';
+import { useTheme } from '../../scripts/ThemeContext';
 
 const Header = () => {
+    const { toggleTheme } = useTheme();
+
     return (
         <header className='header'>
             <div className='header__info'>
@@ -18,6 +21,7 @@ const Header = () => {
                     <li className='header__nav-item'>Contact</li>
                 </ul>
             </nav>
+            <button onClick={toggleTheme}>Toggle Theme</button>
         </header>
     );
 }

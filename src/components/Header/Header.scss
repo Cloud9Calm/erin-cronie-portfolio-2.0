@@ -3,8 +3,6 @@
 
 .header {
     font-family: $comfortaa-font;
-    background: linear-gradient(to right, rgb(20, 69, 47) 10%, rgb(29, 46, 40) 100%);
-    color: $secondary-font-color;
     @include flex-header;
     align-items: center;
     justify-content: space-between;
