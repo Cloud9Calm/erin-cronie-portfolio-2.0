@@ -4,6 +4,7 @@ import { useTheme } from './scripts/ThemeContext';
 import AnimatedCursor from "react-animated-cursor";
 import Header from './components/Header/Header';
 import Profile from './components/Profile/Profile';
+import WorkExperience from './components/WorkExperience/WorkExperience';
 
 function App() {
   const { theme, toggleTheme } = useTheme();
@@ -21,6 +22,7 @@ function App() {
       <AnimatedCursor />
       <Header />
       <Profile />
+      <WorkExperience />
     </div>
   );
 }

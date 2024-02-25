@@ -1,0 +1,69 @@
+@import '../../styles/partials/_variables';
+@import '../../styles/partials/_mixins';
+
+.work {
+    font-family: $roboto-font;
+
+    &__title {
+        font-size: 1.75rem;
+        margin: 1rem;
+            @include tablet {
+                font-size: 2rem;
+                margin: 2rem 1rem;
+            }
+    }
+
+    &__button {
+        border: 2px solid $border;
+        border-radius: 40px;
+        color: inherit;
+        padding: .75rem;
+        margin: 2rem;
+        text-decoration: none;
+        transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+            @include tablet {
+                font-size: 1.5rem;
+                padding: 1rem;
+            }&:hover {
+            cursor: none;
+            border-radius: 40px;
+            box-shadow: inset 20rem 0 0 0 rgba(103, 19, 101, 0.516);
+        }
+    }
+
+    &__section {
+        margin: 1.25rem;
+        text-wrap: wrap;
+    }
+
+    &__header {
+        background: linear-gradient(to right, rgb(158, 73, 171) 10%, rgb(84, 39, 91) 100%);
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        margin: .25rem 0;
+        padding: 0 1rem;
+            @include tablet {
+              
+            }
+    }
+
+    &__education,
+    &__experience,
+    &__interests {
+        font-size: 1rem;
+            @include tablet {
+                font-size: 2rem;
+            }
+
+    }
+
+    &__list-item {
+        margin: 1rem;
+    }
+}
+
+svg {
+    fill: white;
+}
