@@ -19,6 +19,7 @@
     }
 
     &__button {
+        font-family: $roboto-font;
         border: 2px solid $dark-fill-color;
         border-radius: 40px;
         color: inherit;
