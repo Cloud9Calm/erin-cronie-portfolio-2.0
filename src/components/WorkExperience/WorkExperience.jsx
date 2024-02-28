@@ -20,9 +20,9 @@ const WorkExperience = () => {
     return (
         <section className='work'>
             <div className='work__button-section'>
-                <h2 className='work__title' id="resume">Resume</h2>
+                <h2 className='work__title title' id="resume">Resume</h2>
                 <a 
-                    href="/assets/Erin-Cronie-Resume.pdf" 
+                    href="/Erin-Cronie-Resume.pdf" 
                     download="Erin-Cronie-Resume.pdf"
                     className='work__button'>
                     Download My Resume
@@ -30,7 +30,7 @@ const WorkExperience = () => {
             </div>
             <div className='work__main-section'>
                 <div className='work__header' onClick={() => toggleVisibility('education')}>
-                    <h3 className='work__education'>Education</h3>
+                    <h3 className='work__education title'>Education</h3>
                     <DropDown
                         className="work__dropdown-icon" 
                         style={{ transform: isVisible.education ? 'rotate(-90deg)' : 'rotate(0deg)', transition: 'transform 0.3s ease' }}  
@@ -45,7 +45,7 @@ const WorkExperience = () => {
                 )}
 
                 <div className='work__header' onClick={() => toggleVisibility('experience')}>
-                    <h3 className='work__experience'>Experience</h3>
+                    <h3 className='work__experience title'>Experience</h3>
                     <DropDown
                         className="work__dropdown-icon" 
                         style={{ transform: isVisible.experience ? 'rotate(-90deg)' : 'rotate(0deg)', transition: 'transform 0.3s ease' }}  
@@ -66,7 +66,7 @@ const WorkExperience = () => {
                 )}
 
                 <div className='work__header' onClick={() => toggleVisibility('skills')}>
-                    <h3 className='work__skills'>Skills</h3>
+                    <h3 className='work__skills title'>Skills</h3>
                     <DropDown
                         className={`work__dropdown-icon ${isVisible.skills ? 'work__dropdown--open' : ''}`} 
                         style={{ transform: isVisible.skills ? 'rotate(-90deg)' : 'rotate(0deg)', transition: 'transform 0.3s ease' }}  

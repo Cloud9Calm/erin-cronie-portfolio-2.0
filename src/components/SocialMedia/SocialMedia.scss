@@ -1,0 +1,34 @@
+@import '../../styles/partials/_variables';
+@import '../../styles/partials/_mixins';
+
+.social-media {
+    font-family: $roboto-font;
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 2rem;
+            @include tablet {
+                flex-direction: row;
+                font-size: 3rem;
+            }
+    }
+
+    &__list-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 1rem;
+        text-align: center;
+            @include tablet {
+                font-size: 2rem;
+    
+            }
+    }
+
+    &__svg {
+        color: $light-fill-color;
+    }
+
+}

@@ -5,6 +5,7 @@ import AnimatedCursor from "react-animated-cursor";
 import Header from './components/Header/Header';
 import Profile from './components/Profile/Profile';
 import WorkExperience from './components/WorkExperience/WorkExperience';
+import SocialMedia from './components/SocialMedia/SocialMedia';
 
 function App() {
   const { theme, toggleTheme } = useTheme();
@@ -23,6 +24,7 @@ function App() {
       <Header />
       <Profile />
       <WorkExperience />
+      <SocialMedia />
     </div>
   );
 }
