@@ -2,8 +2,10 @@
 @import '../../styles/partials/_mixins';
 
 .work {
-    font-family: $roboto-font;
     width: 80vw;
+        @include tablet {
+            margin: 8rem 0;
+        }
 
     &__button-section {
         display: flex;
@@ -13,15 +15,6 @@
                 flex-direction: row;
                 align-items: center;
                 justify-content: space-between;
-            }
-    }
-
-    &__title {
-        font-size: 1.75rem;
-        margin: 1rem;
-            @include tablet {
-                font-size: 2rem;
-                margin: 2rem 1rem;
             }
     }
 
@@ -48,7 +41,8 @@
     }
 
     &__header {
-        background-color: #cc8b65;        
+        background-color: $light-fill-color;    
+        opacity: 40%;    
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -76,6 +70,7 @@
     
     &__details-list,
     &__list-item {
+        font-family: $roboto-font;
         margin: 1rem;
             @include tablet {
                 margin: 2rem 1rem;

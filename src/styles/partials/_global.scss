@@ -16,10 +16,20 @@ body {
   color: var(--text-color);
 }
 
-li {
+li,
+a {
     text-decoration: none;
     list-style: none;
     color: inherit;
     cursor: pointer;
 }
 
+.title {
+  font-family: $roboto-font;
+  font-size: 1.75rem;
+  margin: 1rem;
+      @include tablet {
+          font-size: 2rem;
+          margin: 2rem 1rem;
+      }
+}
