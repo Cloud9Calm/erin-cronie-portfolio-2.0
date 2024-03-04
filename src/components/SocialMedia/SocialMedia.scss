@@ -29,10 +29,14 @@
                 font-size: 2rem;
             } &:hover {
                 transform: scale(1.1);
-                box-shadow: 0 0 10px $light-fill-color;
+                box-shadow: 0 0 5px $light-fill-color;
                 border-radius: 10px;
             }
     }
-    
+    &__svg {
+        fill: $dark-fill-color;
+        height: 75px;
+        width: 75px;
+    }
 
 }
