@@ -1,7 +1,7 @@
 import './SocialMedia.scss';
 import { GitHubSVG } from '../SVG/svg';
 import { InstaSVG } from '../SVG/svg';
-import { LinkedInSVG } from '../SVG/svg'; 
+import { LinkedInSVG } from '../SVG/svg';
 
 const SocialMedia = () => {
     return (

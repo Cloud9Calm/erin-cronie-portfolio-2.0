@@ -58,6 +58,12 @@
         width: 50px;
     }
 
+    &__details-list,
+    &__list {
+        padding: 0;
+        margin: 2rem 0;
+    }
+
     &__education,
     &__experience,
     &__skills {
@@ -69,13 +75,40 @@
 
     }
     
-    &__details-list,
     &__list-item {
         font-family: $roboto-font;
         margin: 1rem;
             @include tablet {
+                padding: 0;
                 margin: 2rem 1rem;
-                font-size: 2rem;
+                font-size: 1.5rem;
             }
+    }
+    
+    &__job,
+    &__company,
+    &__duration,
+    &__description {
+        font: 1rem;
+            @include tablet {
+                font-size: 1.5rem;
+            }
+    }
+
+    &__job {
+        font-weight: bold;
+    }
+
+    &__duration {
+        font-size: .75rem;
+            @include tablet {
+                font-size: 1rem;
+            }
+    }
+
+    &__description {
+        font-size: 1rem;
+        padding: 0 0 0 1rem;
+        margin: .5rem;
     }
 }
