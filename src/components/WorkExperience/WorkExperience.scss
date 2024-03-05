@@ -2,9 +2,9 @@
 @import '../../styles/partials/_mixins';
 
 .work {
-    width: 80vw;
+    margin: 3rem 0;
         @include tablet {
-            margin: 8rem 0;
+            margin: 4rem 0;
         }
 
     &__button-section {

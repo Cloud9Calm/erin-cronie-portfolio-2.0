@@ -6,10 +6,10 @@
     @include flex-column;
     align-items: center;
     justify-content: space-between;
-    @include tablet {
-        flex-direction: row;
-        height: 100px;
-    }
+        @include tablet {
+            flex-direction: row;
+            height: 100px;
+        }
 
     &__info {
         @include flex-column;

@@ -18,7 +18,7 @@ const WorkExperience = () => {
     };
 
     return (
-        <section className='work'>
+        <section className='work' id='work-experience'>
             <div className='work__button-section'>
                 <h2 className='work__title title' id="resume">Resume</h2>
                 <a 

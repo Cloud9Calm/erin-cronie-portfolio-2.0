@@ -8,6 +8,7 @@
        @include flex-column;
         align-items: center;
         padding: 0;
+        margin: 0;
             @include tablet {
                 flex-direction: row;
                 justify-content: space-between;
@@ -22,7 +23,7 @@
                 @include desktop {
                     height: 100px;
                 }
-        } 
+            } 
     }
 
     &__list-item {
@@ -33,16 +34,17 @@
         max-width: 20rem;
         margin: 2rem 1rem;
         border: transparent;
-        border-radius: 10px;
+        border-radius: 1px;
         padding: .5rem; 
             @include tablet {
                 font-size: 2rem;
             } &:hover {
                 transform: scale(1.1);
                 box-shadow: 0 0 5px $light-fill-color;
-                border-radius: 10px;
+                border-radius: 1px;
             }
     }
+
     &__svg {
         fill: $dark-fill-color;
         height: 75px;

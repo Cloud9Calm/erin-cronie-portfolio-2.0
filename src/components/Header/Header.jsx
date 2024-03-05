@@ -2,6 +2,7 @@ import './Header.scss';
 import { useTheme } from '../../scripts/ThemeContext';
 import { ReactComponent as LightModeIcon } from '../../assets/images/LightMode.svg';
 import { ReactComponent as DarkModeIcon } from '../../assets/images/DarkMode.svg';
+import { Link } from 'react-router-dom'; // Import Link from react-router-dom
 
 const Header = () => {
     const { theme, toggleTheme } = useTheme();
@@ -18,9 +19,14 @@ const Header = () => {
             </div>
             <nav className='header__nav'>
                 <ul className='header__nav-list'>
-                    <li className='header__nav-item'>Resume</li>
-                    <li className='header__nav-item'>Projects</li>
-                    <li className='header__nav-item'>Contact</li>
+                <li className='header__nav-item'>
+                    <Link to="/workexperience" onClick={() => window.scrollTo({ top: document.getElementById('work-experience').offsetTop, behavior: 'smooth' })}>
+                        Resume
+                    </Link>
+                </li>
+
+                    <li className='header__nav-item'><Link to="">Projects</Link></li>
+                    <li className='header__nav-item'><Link to="">Contact</Link></li>
                 </ul>
             </nav>
             <button className='header__button' onClick={toggleTheme}>
