@@ -39,9 +39,7 @@
             @include tablet {
                 font-size: 2rem;
             } &:hover {
-                transform: scale(1.1);
-                box-shadow: 0 0 5px $light-fill-color;
-                border-radius: 1px;
+                @include button-hover-2;
             }
     }
 

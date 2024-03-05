@@ -3,20 +3,26 @@
     {
         "title": "Erin Cronie",
         "url": "erincronie.me",
-        "description": "More information about myself",
-        "techStack": ["Bootstrap", "JQuery", "Sass"]
+        "description": "A personal portfolio website showcasing my skills, projects, and experiences.",
+        "techStack": ["Node", "React", "JavaScript", "Sass", "GitHub Pages"]
     },
     {
-        "title": "Naramata Vineyard",
-        "url": "thb",
-        "description": "Still in production - A Bed and Breakfast booking application",
-        "techStack": ["JavaScript", "React", "Google Cloud Deployment"]
+        "title": "Cloud9 Calm Co.",
+        "url": "cloud9calm.com",
+        "description": "A freelance project in progress: building a Shopify store for Cloud9 Calm Co., featuring custom designs and functionalities.",
+        "techStack": ["React", "Tailwind CSS", "JavaScript"]
     },
     {
         "title": "Shop Cloud9 Calm",
         "url": "shopcloud9calm.com",
-        "description": "Still in production - Shopify Store",
-        "techStack": ["Shopify", "Liquid Templating Language", "Shopify APIs"]
+        "description": "An ongoing project: development of a Shopify store for Cloud9 Calm.",
+        "techStack": ["Shopify", "Shopify Liquid", "Shopify APIs"]
+    },
+    {
+        "title": "Naramata Vineyard",
+        "url": "naramatavineyard.com",
+        "description": "An ongoing project: a Bed and Breakfast booking application for Naramata Vineyard.",
+        "techStack": ["JavaScript", "React", "Google Cloud Deployment"]
     }
     ]
 }

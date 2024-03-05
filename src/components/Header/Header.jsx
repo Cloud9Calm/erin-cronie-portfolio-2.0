@@ -25,7 +25,12 @@ const Header = () => {
                     </Link>
                 </li>
 
-                    <li className='header__nav-item'><Link to="">Projects</Link></li>
+                <li className='header__nav-item'>
+                    <Link to="/projects" onClick={() => window.scrollTo({ top: document.getElementById('projects').offsetTop, behavior: 'smooth' })}>
+                        Projects
+                    </Link>
+                </li>
+
                     <li className='header__nav-item'><Link to="">Contact</Link></li>
                 </ul>
             </nav>
