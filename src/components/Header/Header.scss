@@ -9,6 +9,10 @@
         @include tablet {
             flex-direction: row;
             height: 100px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            backdrop-filter: blur(10px);
         }
 
     &__info {
@@ -53,7 +57,7 @@
             padding: 1rem 2rem;
             font-size: 1.5rem;
         } &:hover {
-            @include button-hover;
+            @include button-hover-1;
         }
     }
 

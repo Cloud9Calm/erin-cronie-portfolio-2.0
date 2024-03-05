@@ -1,0 +1,51 @@
+@import '../../styles/partials/_variables';
+@import '../../styles/partials/_mixins';
+
+.projects {
+    font-family: $roboto-font;
+
+    &__list {
+        @include flex-column;
+            @include tablet {
+                flex-direction: row;
+                flex-wrap: wrap;
+            }
+    }
+ 
+    &__list-items {
+        padding: 1rem;
+        margin: 1rem;
+        max-width: 20rem;
+        border: 1px solid;
+            @include tablet {
+                max-width: 30rem;
+            } &:hover {
+                @include button-hover-2;
+            }
+    }
+
+    &__name {
+        margin: 0;
+    }
+
+    &__tech-stack {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    } 
+
+    &__tech-stack-item {
+        border: 2px solid;
+        padding: .5rem;
+        margin: .5rem;
+        font-size: .5rem;
+        border-radius: 30px;
+            @include tablet {
+                padding: 1rem;
+                margin: 1rem;
+                font-size: .75rem;
+            } 
+
+    }
+}

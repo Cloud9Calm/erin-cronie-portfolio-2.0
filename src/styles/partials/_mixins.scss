@@ -17,11 +17,18 @@
   flex-direction: column;
 }
 
-@mixin button-hover {
+@mixin button-hover-1 {
   cursor: none;
   border-radius: 40px;
   box-shadow: inset 20rem 0 0 0 $dark-fill-color;
   color: $text-color-light-hover;
+}
+
+@mixin button-hover-2 {
+  transform: scale(1.01);
+  box-shadow: 0 0 5px $light-fill-color;
+  border-radius: 1px;
+  border: none;
 }
 
 @mixin light-theme {

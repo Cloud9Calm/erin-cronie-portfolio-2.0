@@ -4,8 +4,6 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { useTheme } from './scripts/ThemeContext';
 import AnimatedCursor from "react-animated-cursor";
 import Header from './components/Header/Header';
-import Profile from './components/Profile/Profile';
-import WorkExperience from './components/WorkExperience/WorkExperience';
 import SocialMedia from './components/SocialMedia/SocialMedia';
 import Homepage from './pages/Homepage';
 
@@ -23,10 +21,19 @@ function App() {
   return (
       <div className='App'>
       <BrowserRouter>
-    <Homepage />
+
+        <AnimatedCursor />
+        <Header />  
+        <Homepage />
+
         <Routes>
           <Route path="/workexperience" />
         </Routes>
+
+        <Routes>
+          <Route path="/projects" />
+        </Routes>
+
         <SocialMedia />
     </BrowserRouter>
       </div>
