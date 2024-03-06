@@ -26,13 +26,13 @@ function App() {
         <Header />  
         <Homepage />
 
-        <Routes>
-          <Route path="/workexperience" />
-        </Routes>
+          <Routes>
+            <Route path="/workexperience" />
+          </Routes>
 
-        <Routes>
-          <Route path="/projects" />
-        </Routes>
+          <Routes>
+            <Route path="/projects" />
+          </Routes>
 
         <SocialMedia />
     </BrowserRouter>

@@ -32,12 +32,13 @@
         font-size: 1rem;
         text-align: center;
         max-width: 20rem;
-        margin: 2rem 1rem;
+        margin: 1rem;
         border: transparent;
         border-radius: 1px;
         padding: .5rem; 
             @include tablet {
                 font-size: 2rem;
+                margin: 2rem 1rem;
             } &:hover {
                 @include button-hover-2;
             }
@@ -45,8 +46,12 @@
 
     &__svg {
         fill: $dark-fill-color;
-        height: 75px;
-        width: 75px;
+        height: 50px;
+        width: 50px;
+            @include tablet {
+                height: 75px;
+                width: 75px;
+            }
     }
 
 }

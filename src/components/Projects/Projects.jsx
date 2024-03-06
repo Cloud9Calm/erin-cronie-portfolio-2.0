@@ -9,7 +9,7 @@ const Profile = () => {
                 {projectsData.projects.map((project, index) => (
                     <div key={index} className="projects__list-items">
                         <h3 className='projects__name'>{project.title}</h3>
-                        <p className='projects__url'>URL: <a href={project.url}>{project.url}</a></p>
+                        <p className='projects__url'>URL: <a href={`http://${project.url}`} target="_blank">{project.url}</a></p>
                         <p className='projects__description'>{project.description}</p>
                         <h3 className='projects__tech-stack-title'>Tech Stack:</h3>
                         <div className='projects__tech-stack'>
