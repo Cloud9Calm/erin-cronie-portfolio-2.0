@@ -26,6 +26,10 @@ function App() {
         <Header />  
         <Homepage />
 
+        <Routes>
+            <Route path="/" />
+          </Routes>
+
           <Routes>
             <Route path="/workexperience" />
           </Routes>
