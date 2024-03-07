@@ -21,30 +21,31 @@ const ContactForm = () => {
 
   const isLocalhost = window.location.hostname === 'localhost';
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     if (!recaptchaResponse) {
       alert('Please complete the reCAPTCHA');
       return;
     }
+    
     const formElement = e.target;
     const formDataWithRecaptcha = new FormData(formElement);
     formDataWithRecaptcha.append('g-recaptcha-response', recaptchaResponse);
-    emailjs.sendForm(
-      process.env.REACT_APP_EMAILJS_SERVICE_ID,
-      process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
-      formElement,
-      process.env.REACT_APP_EMAILJS_USER_ID // Add EmailJS user ID
-    )
-      .then((result) => {
-        console.log('Email sent successfully:', result.text);
-        alert('Message sent successfully!');
-        setFormData({ name: '', email: '', message: '' });
-      })
-      .catch((error) => {
-        console.error('Failed to send email:', error.text);
-        alert('Failed to send message');
-      });
+  
+    try {
+      const result = await emailjs.sendForm(
+        process.env.REACT_APP_EMAILJS_SERVICE_ID,
+        process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
+        formElement, {
+        publicKey: process.env.REACT_APP_EMAILJS_USER_ID 
+        });
+      console.log('Email sent successfully:', result.text);
+      alert('Message sent successfully!');
+      setFormData({ name: '', email: '', message: '' });
+    } catch (error) {
+      console.error('Failed to send email:', error.text);
+      alert('Failed to send message');
+    }
   };
 
   return (
