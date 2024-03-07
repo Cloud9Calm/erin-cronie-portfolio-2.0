@@ -1,0 +1,37 @@
+@import '../../styles/partials/_variables';
+@import '../../styles/partials/_mixins';
+
+.contact {
+    margin: 2rem;
+   
+    &__form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__title {
+        font-family: $roboto-font;
+        margin: 0;
+    }
+
+    &__name,
+    &__email {
+        margin: .5rem;
+        padding: 1rem 10rem .25rem 0.25rem;
+        @include form-border;
+    }
+
+    &__message {
+        margin: 1rem;
+        padding: 5rem 10rem 0 0.25rem;
+        @include form-border;
+    }
+
+    &__button {
+        @include button-hover-1;
+        padding: 1rem;
+        margin: 1rem;
+        border: none;
+    }
+}

@@ -31,6 +31,12 @@
   border: none;
 }
 
+@mixin form-border {
+  border: none;
+  background-color: transparent;
+  border-bottom: 3px solid $dark-fill-color; 
+}
+
 @mixin light-theme {
   color: $text-color-light;
   background-color: $background-color-light;}
