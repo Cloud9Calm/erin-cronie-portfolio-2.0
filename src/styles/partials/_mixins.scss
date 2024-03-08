@@ -38,7 +38,7 @@
 }
 
 @mixin light-theme {
-  color: $text-color-light;
+  color: #{$text-color-light};
   background-color: $background-color-light;}
 
 @mixin dark-theme {

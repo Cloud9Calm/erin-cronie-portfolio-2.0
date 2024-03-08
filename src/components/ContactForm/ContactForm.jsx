@@ -86,7 +86,7 @@ const ContactForm = () => {
       </div>
       <div className='contact__connect-div'>
         <h2 className='contact__connect title'>Let's Connect!</h2>
-        <p className='contact__thank-you'>Thank you for visiting my portfolio! I'm always open to new opportunities, collaborations, and feedback. Interested in working together? Let's chat!</p>
+        <p className='contact__thank-you'>Thank you for visiting my portfolio! I'm always open to new opportunities, collaborations, and feedback. Interested in working together? Let's chat! Social media is linked below:</p>
       </div>
     </section>
   );
