@@ -51,13 +51,14 @@ const ContactForm = () => {
 
   return (
     <section className='contact' id="contact">
+      <div className='contact__form-div'>
       <h3 className='contact__title title'>Contact Me</h3>
       <form onSubmit={handleSubmit} className='contact__form'>
         <input
         className='contact__name'
           type="text"
           name="name"
-          placeholder="Your Name"
+          placeholder="Name"
           value={formData.name}
           onChange={handleChange}
         />
@@ -65,7 +66,7 @@ const ContactForm = () => {
         className='contact__email'
           type="email"
           name="email"
-          placeholder="Your Email"
+          placeholder="Email"
           value={formData.email}
           onChange={handleChange}
         />
@@ -82,6 +83,11 @@ const ContactForm = () => {
         />
         <button type="submit" className='contact__button'>Send Message</button>
       </form>
+      </div>
+      <div className='contact__connect-div'>
+        <h2 className='contact__connect title'>Let's Connect!</h2>
+        <p className='contact__thank-you'>Thank you for visiting my portfolio! I'm always open to new opportunities, collaborations, and feedback. Interested in working together? Let's chat!</p>
+      </div>
     </section>
   );
 };

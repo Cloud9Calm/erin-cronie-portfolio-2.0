@@ -33,7 +33,7 @@ const Header = () => {
                         <Link to="/projects" onClick={() => scrollToSection('projects')} aria-label="Projects">Projects</Link>
                     </li>
                     <li className='header__nav-item'>
-                        <Link to="/contact" aria-label="Contact">Contact</Link>
+                        <Link to="/contact" onClick={() => scrollToSection('contact')} aria-label="Contact">Contact</Link>
                     </li>
                 </ul>
             </nav>

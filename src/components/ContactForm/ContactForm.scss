@@ -2,12 +2,27 @@
 @import '../../styles/partials/_mixins';
 
 .contact {
-    margin: 2rem;
-   
+    display: flex;
+    flex-direction: column-reverse;
+    background-color: white;
+    max-width: 90vw;
+    margin: 4rem auto;
+    padding: 1rem;
+        @include tablet {
+            margin: 8rem 0;
+            flex-direction: row;
+            max-width: 80vw;
+        }
+    
     &__form {
         display: flex;
         flex-direction: column;
         align-items: center;
+        margin: 2rem;
+            @include tablet {
+                align-items: flex-start;
+                margin: 4rem;
+            }
     }
 
     &__title {
@@ -20,12 +35,19 @@
         margin: .5rem;
         padding: 1rem 10rem .25rem 0.25rem;
         @include form-border;
+            @include tablet {
+                font-size: 1.5rem;
+            }
     }
 
     &__message {
         margin: 1rem;
         padding: 5rem 10rem 0 0.25rem;
         @include form-border;
+            @include tablet {
+                font-size: 1.5rem;
+                padding: 5rem 6rem 0 .25rem;
+            }
     }
 
     &__button {
@@ -33,5 +55,19 @@
         padding: 1rem;
         margin: 1rem;
         border: none;
+    }
+
+    &__connect {
+        font-family: $roboto-font;
+    }
+
+    &__thank-you {
+        font-family: $comfortaa-font;
+        margin: 2rem;
+            @include tablet {
+                padding: 1rem 4rem;
+                font-size: 1.5rem;
+            }
+
     }
 }
