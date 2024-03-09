@@ -34,7 +34,7 @@
 @mixin form-border {
   border: none;
   background-color: transparent;
-  border-bottom: 3px solid $dark-fill-color; 
+  border-bottom: 3px solid; 
 }
 
 @mixin light-theme {

@@ -1,6 +1,16 @@
 @import '../../styles/partials/_variables';
 @import '../../styles/partials/_mixins';
 
+.light-theme .work__header {
+    background-color: $light-fill-color; 
+    color: $background-color-dark; 
+}
+  
+.dark-theme .work__header {
+    background-color: $dark-fill-color; 
+    color: $background-color-light;
+}
+
 .work {
     margin: 3rem 0;
         @include tablet {
@@ -39,9 +49,7 @@
         text-wrap: wrap;
     }
 
-    &__header {
-        background-color: $light-fill-color;    
-        opacity: 80%;    
+    &__header { 
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -52,7 +60,7 @@
     }
 
     &__dropdown-icon {
-        fill: $dark-fill-color;
+        fill: white;
         height: 50px;
         width: 50px;
     }

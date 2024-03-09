@@ -3,7 +3,7 @@
 
 
 body {
-  margin: 1rem;
+  margin: 0;
   width: 95vw;
   &.light-theme {
     @include light-theme;

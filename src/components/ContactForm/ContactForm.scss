@@ -1,16 +1,28 @@
 @import '../../styles/partials/_variables';
 @import '../../styles/partials/_mixins';
 
+.light-theme .contact {
+    background-color: $light-fill-color; 
+    color: $background-color-dark; 
+}
+  
+.dark-theme .contact {
+    background-color: $dark-fill-color; 
+    color: $background-color-light;
+}
+
 .contact {
     display: flex;
     flex-direction: column-reverse;
-    background-color: rgba(213, 138, 138, 0.255);
-    margin: 4rem auto;
-    padding: 1rem;
+    padding: 2rem;
     width: 100vw;
         @include tablet {
-            margin: 8rem 0;
+            padding: 2rem;
             flex-direction: row;
+            justify-content: space-evenly;
+                @include desktop {
+                    padding: 4rem; 
+                }
         }
     
     &__form {
@@ -46,11 +58,12 @@
             @include tablet {
                 font-size: 1.5rem;
                 padding: 5rem 6rem 0 .25rem;
+                height: 30px;
             }
     }
 
     &__button {
-        @include button-hover-1;
+        border-radius: 50px;
         padding: 1rem;
         margin: 1rem;
         border: none;
@@ -58,6 +71,10 @@
 
     &__connect {
         font-family: $roboto-font;
+        margin: 3rem 0;
+            @include tablet {
+                margin: 4rem;
+            }
     }
 
     &__thank-you {
@@ -65,7 +82,9 @@
         margin: 2rem;
             @include tablet {
                 padding: 1rem 4rem;
+                margin: 0;
                 font-size: 1.5rem;
+                max-width: 40rem;
             }
 
     }
