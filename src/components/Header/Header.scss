@@ -2,12 +2,12 @@
 @import '../../styles/partials/_mixins';
 
 .light-theme .header__theme-icon {
-    fill: $light-fill-color; 
+    fill: $dark-fill-color; 
    
 }
   
 .dark-theme .header__theme-icon {
-    fill: $dark-fill-color; 
+    fill: $light-fill-color; 
 }
 
 .header {
