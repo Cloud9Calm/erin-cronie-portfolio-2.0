@@ -17,6 +17,7 @@
     &__list {
         @include flex-column;
         align-items: center;
+        margin: 2rem;
             @include tablet {
                 flex-direction: row;
                 flex-wrap: wrap;
@@ -29,12 +30,12 @@
         margin: 1rem;
         max-width: 20rem;
         border: 1px solid;
-        height: 60vh;
-        width: 60vw;
+        height: 350px;
+        width: 250px;
             @include tablet {
                 max-width: 30rem;
-                height: 40vh;
-                 width: 40vw;
+                height: 350px;
+                 width: 350px;
             } &:hover {
                 @include button-hover-2;
             }

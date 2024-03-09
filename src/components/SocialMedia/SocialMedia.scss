@@ -1,6 +1,15 @@
 @import '../../styles/partials/_variables';
 @import '../../styles/partials/_mixins';
 
+.light-theme .social-media__svg {
+    fill: $light-fill-color; 
+   
+}
+  
+.dark-theme .social-media__svg {
+    fill: $dark-fill-color; 
+}
+
 .social-media {
     font-family: $roboto-font;
 
@@ -13,6 +22,8 @@
                 flex-direction: row;
                 justify-content: space-between;
                 font-size: 3rem;
+            }       @include tablet {
+                        justify-content:  space-evenly;
             }
     }
 
@@ -45,7 +56,6 @@
     }
 
     &__svg {
-        fill: $dark-fill-color;
         height: 50px;
         width: 50px;
             @include tablet {

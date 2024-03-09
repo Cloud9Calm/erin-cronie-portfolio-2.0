@@ -1,6 +1,15 @@
 @import '../../styles/partials/_variables';
 @import '../../styles/partials/_mixins';
 
+.light-theme .header__theme-icon {
+    fill: $light-fill-color; 
+   
+}
+  
+.dark-theme .header__theme-icon {
+    fill: $dark-fill-color; 
+}
+
 .header {
     font-family: $comfortaa-font;
     @include flex-column;
@@ -67,7 +76,6 @@
     }
 
     &__theme-icon  {
-        fill: $dark-fill-color;
         height: 20px;
         width: 20px;
         margin: 1rem;
