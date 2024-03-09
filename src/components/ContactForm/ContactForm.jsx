@@ -38,7 +38,11 @@ const ContactForm = () => {
         process.env.REACT_APP_EMAILJS_SERVICE_ID,
         process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
         formElement,
-        process.env.REACT_APP_EMAILJS_USER_ID
+        process.env.REACT_APP_EMAILJS_USER_ID,
+        {
+          name: formData.name,
+          email: formData.email
+        } 
       );
       console.log('Email sent successfully:', result.text);
       alert('Message sent successfully!');
