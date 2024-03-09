@@ -1,0 +1,47 @@
+@import '../partials/variables';
+
+@mixin tablet {  
+    @media (min-width: $tablet-breakpoint) {
+      @content;
+    }
+  }
+
+@mixin desktop {  
+    @media (min-width: $desktop-breakpoint) {
+        @content;
+    }
+}
+
+@mixin flex-column{
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin button-hover-1 {
+  cursor: none;
+  border-radius: 40px;
+  box-shadow: inset 20rem 0 0 0 $dark-fill-color;
+  color: $text-color-light-hover;
+}
+
+@mixin button-hover-2 {
+  transform: scale(1.01);
+  box-shadow: 0 0 5px $light-fill-color;
+  border-radius: 1px;
+  border: none;
+}
+
+@mixin form-border {
+  border: none;
+  background-color: transparent;
+  border-bottom: 3px solid; 
+}
+
+@mixin light-theme {
+  color: #{$text-color-light};
+  background-color: $background-color-light;}
+
+@mixin dark-theme {
+  color: #{$text-color-dark};
+  background-color: $background-color-dark;
+}

@@ -1,0 +1,73 @@
+{
+    "name": "Erin Cronie",
+    "title": "Aspiring Software Engineer",
+    "contact": {
+      "email": "erincronie@gmail.com"
+    },
+    "education": [
+      {
+        "study": "Mimo",
+        "degree": "Web Development",
+        "year": "2023"
+      },
+      {
+        "study": "BrainStation",
+        "degree": "Software Engineer Diploma",
+        "year": "2023"
+      },
+      {
+        "study": "Team Treehouse",
+        "degree": "Front End Development Techdegree",
+        "year": "2024"
+      }
+    ],
+    "experience": [
+      {
+        "jobTitle": "Software Developer Teacher's Assistant",
+        "company": "BrainStation",
+        "duration": "Winter 2023/2024",
+        "description": "As a Teaching Assistant (TA) for BrainStation, I assist instructors by helping students understand coding concepts, debug code, grade assignments, and provide technical support. I also update course materials and stay updated with industry trends to offer relevant insights to students."
+      },
+      {
+        "jobTitle": "Shopify Plus Specialist",
+        "company": "Shopify Plus",
+        "duration": "August 2021 to July 2023",
+        "description": "Shopify Plus Support Specialist provide comprehensive assistance to clients using Shopify Plus, addressing their inquiries, troubleshooting technical issues, and guiding them through platform features. I offer personalized solutions, ensure smooth operation of e-commerce stores, and stay updated with Shopify updates and best practices to deliver exceptional support services."
+      },
+      {
+        "jobTitle": "Shopify Specialist",
+        "company": "Shopify",
+        "duration": "February 2021 to August 2021",
+        "description": "A Shopify Support Specialist offer dedicated assistance to clients using the Shopify platform, resolving their queries, providing technical guidance, and troubleshooting any issues they encounter. I focus on delivering prompt and effective solutions to ensure the smooth functioning of their e-commerce stores. Staying abreast of Shopify updates and industry trends, I aim to deliver excellent support tailored to the unique needs of each client."
+      },
+      {
+        "jobTitle": "General Manager",
+        "company": "Mile Zero Wine Bar",
+        "duration": "September 2015 to January 2020",
+        "description": "A Wine Bar General Manager's role encompasses overseeing all aspects of the wine bar's operations, including staffing, inventory management, customer service, and financial performance. I lead a team to create a welcoming atmosphere for patrons, curate a diverse wine selection, and ensure exceptional service standards. I'm responsible for developing and implementing strategies to drive sales, increase profitability, and enhance the overall guest experience. Additionally, I handle administrative tasks, such as scheduling, budgeting, and marketing initiatives, to maintain the wine bar's success and reputation within the community."
+      },
+      {
+        "jobTitle": "Sales Agent",
+        "company": "Whistler Tree Wines",
+        "duration": "October 2015 to October 2019",
+        "description": "A Wine Sales Agent primary responsibility is to promote and sell wines to clients, including restaurants, retailers, and individual consumers. I leverage my knowledge of different wines and their characteristics to effectively communicate their features and benefits to potential buyers. Building and maintaining strong relationships with clients is crucial, as I work to understand their preferences and provide personalized recommendations. I also stay informed about industry trends, new wine releases, and market demands to adapt my sales strategies accordingly. Additionally, I handle administrative tasks such as order processing, inventory management, and sales reporting to ensure smooth operations and client satisfaction."
+      }
+    ],
+      "skills": [
+        "Programming Languages (e.g., JavaScript, TypeScript)",
+        "Web Development (HTML, CSS, JavaScript, React.js)",
+        "Software Development Life Cycle (SDLC)",
+        "Version Control (Git, GitHub)",
+        "Database Management (SQL, NoSQL)",
+        "Problem Solving",
+        "Critical Thinking",
+        "Project Management",
+        "Agile Methodologies (Scrum, Kanban)",
+        "Continuous Integration/Continuous Deployment (CI/CD)",
+        "Cloud Services (Google Cloud Platform)",
+        "RESTful API Design and Development",
+        "Unit Testing (Jest)",
+        "Effective Communication",
+        "Team Collaboration"
+    ]
+  }

@@ -1,0 +1,67 @@
+@import '../../styles/partials/_variables';
+@import '../../styles/partials/_mixins';
+
+.light-theme .social-media__svg {
+    fill: $light-fill-color; 
+   
+}
+  
+.dark-theme .social-media__svg {
+    fill: $dark-fill-color; 
+}
+
+.social-media {
+    font-family: $roboto-font;
+
+    &__list {
+       @include flex-column;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+            @include tablet {
+                flex-direction: row;
+                justify-content: space-between;
+                font-size: 3rem;
+            }       @include tablet {
+                        justify-content:  space-evenly;
+            }
+    }
+
+    &__link {
+        height: 45px;
+            @include tablet {
+            height: 125px;
+                @include desktop {
+                    height: 100px;
+                }
+            } 
+    }
+
+    &__list-item {
+        @include flex-column;
+        align-items: center;
+        font-size: 1rem;
+        text-align: center;
+        max-width: 20rem;
+        margin: 1rem;
+        border: transparent;
+        border-radius: 1px;
+        padding: .5rem; 
+            @include tablet {
+                font-size: 2rem;
+                margin: 2rem 1rem;
+            } &:hover {
+                @include button-hover-2;
+            }
+    }
+
+    &__svg {
+        height: 50px;
+        width: 50px;
+            @include tablet {
+                height: 75px;
+                width: 75px;
+            }
+    }
+
+}

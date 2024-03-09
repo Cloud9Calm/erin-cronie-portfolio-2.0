@@ -1,0 +1,35 @@
+@import '../partials/variables';
+@import '../partials/mixins';
+
+
+body {
+  margin: 0;
+  width: 95vw;
+  &.light-theme {
+    @include light-theme;
+  }
+
+  &.dark-theme {
+    @include dark-theme;
+  }
+  
+  color: var(--text-color);
+}
+
+li,
+a {
+    text-decoration: none;
+    list-style: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+.title {
+  font-family: $roboto-font;
+  font-size: 1.75rem;
+  margin: 1rem;
+      @include tablet {
+          font-size: 2rem;
+          margin: 2rem 1rem;
+      }
+}

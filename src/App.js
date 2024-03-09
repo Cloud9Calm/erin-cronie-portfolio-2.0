@@ -1,24 +1,46 @@
-import logo from './logo.svg';
-import './App.css';
+import '../src/styles/partials/_global.scss';
+import { useEffect } from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { useTheme } from './scripts/ThemeContext';
+import AnimatedCursor from "react-animated-cursor";
+import Header from './components/Header/Header';
+import SocialMedia from './components/SocialMedia/SocialMedia';
+import Homepage from './pages/Homepage';
 
 function App() {
+  const { theme, toggleTheme } = useTheme();
+
+  useEffect(() => {
+    document.body.classList.remove('light-theme', 'dark-theme'); 
+    document.body.classList.add(`${theme}-theme`); 
+    return () => {
+      document.body.classList.remove(`${theme}-theme`);
+    };
+  }, [theme]);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <div className='App'>
+      <BrowserRouter>
+
+        <AnimatedCursor />
+        <Header />  
+        <Homepage />
+
+          <Routes>
+            <Route path="/" element={<Homepage />} />
+          </Routes>
+
+          <Routes>
+            <Route path="/workexperience" />
+          </Routes>
+
+          <Routes>
+            <Route path="/projects" />
+          </Routes>
+
+        <SocialMedia />
+    </BrowserRouter>
+      </div>
   );
 }
 

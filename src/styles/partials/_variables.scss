@@ -1,0 +1,19 @@
+@import './typography';
+
+$tablet-breakpoint: 48rem;
+$desktop-breakpoint: 80rem;
+
+$dark-fill-color: #013328;
+$light-fill-color: #cc8b65;
+
+//light and dark mode
+$background-color-light: #e3dcd2;
+$text-color-light: #100c0d;
+$text-color-light-hover: #e3dcd2;
+
+$background-color-dark: #100c0d;
+$text-color-dark: #e3dcd2;
+$text-color-dark-hover: #100c0d;
+
+$comfortaa-font: 'Comfortaa','Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande';
+$roboto-font: 'Roboto','Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande'
