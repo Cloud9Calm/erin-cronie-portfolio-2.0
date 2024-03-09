@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/erin-cronie-portfolio/static/css/main.f41d1c6a.css",
+    "main.js": "/erin-cronie-portfolio/static/js/main.c993ee0e.js",
+    "static/js/453.d18dc267.chunk.js": "/erin-cronie-portfolio/static/js/453.d18dc267.chunk.js",
+    "static/media/Comfortaa-VariableFont_wght.ttf": "/erin-cronie-portfolio/static/media/Comfortaa-VariableFont_wght.7b8c952927af2b0deacd.ttf",
+    "static/media/RobotoMono-VariableFont_wght.ttf": "/erin-cronie-portfolio/static/media/RobotoMono-VariableFont_wght.e14e25b7c497634efdfe.ttf",
+    "index.html": "/erin-cronie-portfolio/index.html",
+    "static/media/LightMode.svg": "/erin-cronie-portfolio/static/media/LightMode.3aaef1693239048427d5cc0432037143.svg",
+    "static/media/DarkMode.svg": "/erin-cronie-portfolio/static/media/DarkMode.5ec4b3ecc166c1671c764b25a31f40b1.svg",
+    "static/media/dropdown.svg": "/erin-cronie-portfolio/static/media/dropdown.392ff9915c1a17927ab4db1410e14f2a.svg",
+    "main.f41d1c6a.css.map": "/erin-cronie-portfolio/static/css/main.f41d1c6a.css.map",
+    "main.c993ee0e.js.map": "/erin-cronie-portfolio/static/js/main.c993ee0e.js.map",
+    "453.d18dc267.chunk.js.map": "/erin-cronie-portfolio/static/js/453.d18dc267.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f41d1c6a.css",
+    "static/js/main.c993ee0e.js"
+  ]
+}
