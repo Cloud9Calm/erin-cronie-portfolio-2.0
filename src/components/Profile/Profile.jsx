@@ -3,7 +3,7 @@ import Name from '../Name/Name';
 
 const Profile = () => {
     return (
-        <section className='profile'>
+        <section className='profile' id='top'>
             <div className='profile__name-title'>
                 <Name />
                     <h4 className='profile__title'>Software Developer</h4>

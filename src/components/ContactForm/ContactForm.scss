@@ -89,3 +89,11 @@
 
     }
 }
+
+input[type="text"]::placeholder,
+input[name="email"]::placeholder,
+textarea::placeholder {
+    color: white;
+}
+
+
