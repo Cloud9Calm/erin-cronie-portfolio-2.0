@@ -27,8 +27,8 @@ const Header = () => {
                     Welcome
                 </h2>
                 <li className='header__nav-item'>
-                            <Link to="/" onClick={() => scrollToSection('top')} aria-label="Resume">erincronie.me</Link>
-                        </li>
+                    <Link to="/" onClick={() => scrollToSection('top')} aria-label="Resume">erincronie.me</Link>
+                </li>
             </div>
             <button className='header__toggle-menu' onClick={toggleMenu}>
                 Menu

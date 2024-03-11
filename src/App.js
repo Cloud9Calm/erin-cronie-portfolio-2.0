@@ -24,8 +24,7 @@ function App() {
 
         <AnimatedCursor />
         <Header />  
-        <Homepage />
-
+      
           <Routes>
             <Route path="/" element={<Homepage />} />
           </Routes>
