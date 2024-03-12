@@ -5,6 +5,7 @@
   max-width: 30vw;
     @include tablet {
       margin-left: 8rem;
+      max-width: 80vw;
         @include desktop {
           max-width: 60vw;
         }
@@ -30,7 +31,7 @@
     display: inline-block;
     font-size: 5rem;
         @include tablet {
-            font-size: 12rem;
+            font-size: 10rem;
             margin: 0 0 12rem 0;
               @include desktop {
                 margin: 4rem 14rem;
