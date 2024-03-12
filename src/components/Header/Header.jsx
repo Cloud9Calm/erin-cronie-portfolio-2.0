@@ -35,7 +35,7 @@ const Header = () => {
                 Menu
             </button>
             {isMenuOpen && (
-                <nav className='header__nav'>
+                <nav className='header__nav-1'>
                     <ul className='header__nav-list'>
                         <li className='header__nav-item'>
                             <Link to="/workexperience" onClick={() => scrollToSection('work-experience')} aria-label="Resume">Resume</Link>
@@ -49,6 +49,19 @@ const Header = () => {
                     </ul>
                 </nav>
             )}
+              <nav className='header__nav-2'>
+                    <ul className='header__nav-list'>
+                        <li className='header__nav-item'>
+                            <Link to="/workexperience" onClick={() => scrollToSection('work-experience')} aria-label="Resume">Resume</Link>
+                        </li>
+                        <li className='header__nav-item'>
+                            <Link to="/projects" onClick={() => scrollToSection('projects')} aria-label="Projects">Projects</Link>
+                        </li>
+                        <li className='header__nav-item'>
+                            <Link to="/contact" onClick={() => scrollToSection('contact')} aria-label="Contact">Contact</Link>
+                        </li>
+                    </ul>
+                </nav>
             <button className='header__button' onClick={toggleTheme} aria-label="Toggle Theme">
                 {theme === 'light' ? <LightModeIcon className="header__theme-icon" /> : <DarkModeIcon className="header__theme-icon"  />}
             </button>

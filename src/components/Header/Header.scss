@@ -13,26 +13,40 @@
     color: $light-fill-color;
 }
 
-
-
-
 .header {
     font-family: $comfortaa-font;
     @include flex-column;
     align-items: center;
+    justify-content: space-between;
     position: sticky;
     top: 0;
     z-index: 10;
     backdrop-filter: blur(10px);
         @include tablet {
             flex-direction: row;
-            justify-content: space-between;
             height: 100px;
         }
 
     &__toggle-menu {
-        background-color: transparent;
         border: none;
+        @include header-link;
+            @include tablet {
+                display: none;
+            }
+    }
+
+    &__nav-1 {
+        display: contents;
+        @include tablet {
+            display: none;
+        }
+    }
+
+    &__nav-2 {
+        display: none;
+            @include tablet {
+                display: contents;
+            }
     }
 
     &__info {
@@ -46,10 +60,9 @@
 
     &__title {
         font-size: 2rem;
-        margin: 0;
+        margin: 1rem;
             @include tablet {
                 font-size: 4rem;
-                margin: 1rem;
             }
     }
 
