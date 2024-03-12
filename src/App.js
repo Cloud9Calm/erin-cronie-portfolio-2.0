@@ -23,8 +23,8 @@ function App() {
       <BrowserRouter>
         <AnimatedCursor />
         <Header />
+        <Homepage />
         <Routes>
-          <Route path="/" element={<Homepage />} />
           <Route path="/workexperience" />
           <Route path="/projects" />
           <Route path="/contact" />
