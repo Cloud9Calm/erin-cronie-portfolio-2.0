@@ -22,7 +22,7 @@
     top: 0;
     z-index: 10;
     backdrop-filter: blur(10px);
-        @include tablet {
+        @include desktop {
             flex-direction: row;
             height: 100px;
         }
@@ -30,21 +30,21 @@
     &__toggle-menu {
         border: none;
         @include header-link;
-            @include tablet {
+            @include desktop {
                 display: none;
             }
     }
 
     &__nav-1 {
         display: contents;
-        @include tablet {
+        @include desktop {
             display: none;
         }
     }
 
     &__nav-2 {
         display: none;
-            @include tablet {
+            @include desktop {
                 display: contents;
             }
     }
