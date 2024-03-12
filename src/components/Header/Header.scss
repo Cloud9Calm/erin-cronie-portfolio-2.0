@@ -1,43 +1,38 @@
 @import '../../styles/partials/_variables';
 @import '../../styles/partials/_mixins';
 
-.light-theme .header__theme-icon {
+.light-theme .header__theme-icon,
+.light-theme .header__toggle-menu {
     fill: $dark-fill-color; 
-   
+    color: $dark-fill-color;
 }
-  
-.dark-theme .header__theme-icon {
+
+.dark-theme .header__theme-icon,
+.dark-theme .header__toggle-menu {
     fill: $light-fill-color; 
+    color: $light-fill-color;
 }
+
+
+
 
 .header {
     font-family: $comfortaa-font;
     @include flex-column;
     align-items: center;
-    justify-content: space-between;
     position: sticky;
     top: 0;
     z-index: 10;
     backdrop-filter: blur(10px);
-    width: 100vw;
         @include tablet {
             flex-direction: row;
+            justify-content: space-between;
             height: 100px;
         }
 
     &__toggle-menu {
-        border: none;
         background-color: transparent;
-        padding: .5rem 1rem;
-        margin: .25rem;
-        transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
-        @include tablet {
-            margin: 0 1rem;
-            padding: 1rem 2rem;
-            font-size: 1.5rem;
-        } &:hover {
-            @include button-hover-1;
-        }
+        border: none;
     }
 
     &__info {
@@ -49,19 +44,12 @@
         }
     }
 
-    &__title title {
+    &__title {
         font-size: 2rem;
-        margin: 1rem;
+        margin: 0;
             @include tablet {
                 font-size: 4rem;
-            }
-    }
-
-    &__subtitle {
-        border-bottom: .5px solid $dark-fill-color;
-        padding: .5rem 0;
-            @include tablet {
-                border-bottom: none;
+                margin: 1rem;
             }
     }
 
@@ -74,16 +62,7 @@
     }
 
     &__nav-item {
-        padding: .5rem 1rem;
-        margin: .25rem;
-        transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
-        @include tablet {
-            margin: 0 1rem;
-            padding: 1rem 2rem;
-            font-size: 1.5rem;
-        } &:hover {
-            @include button-hover-1;
-        }
+       @include header-link;
     }
 
     &__button {

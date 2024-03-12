@@ -12,6 +12,19 @@
     }
 }
 
+@mixin header-link {
+  padding: .5rem 1rem;
+  margin: .25rem;
+  transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+  @include tablet {
+      margin: 0 1rem;
+      padding: 1rem 2rem;
+      font-size: 1.5rem;
+  } &:hover {
+      @include button-hover-1;
+  }
+}
+
 @mixin flex-column{
   display: flex;
   flex-direction: column;

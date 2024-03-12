@@ -7,9 +7,10 @@ import { Link } from 'react-router-dom';
 
 const Header = () => {
     const { theme, toggleTheme } = useTheme();
-    const [isMenuOpen, setIsMenuOpen] = useState(false); // State to track if dropdown is open
+    const [isMenuOpen, setIsMenuOpen] = useState(false); 
 
     const scrollToSection = (id) => {
+        
         const element = document.getElementById(id);
         if (element) {
             window.scrollTo({ top: element.offsetTop, behavior: 'smooth' });
@@ -27,7 +28,7 @@ const Header = () => {
                     Welcome
                 </h2>
                 <li className='header__nav-item'>
-                    <Link to="/" onClick={() => scrollToSection('top')} aria-label="Resume">erincronie.me</Link>
+                    <Link to="/" onClick={() => scrollToSection('top')} aria-label="erincronie.e">erincronie.me</Link>
                 </li>
             </div>
             <button className='header__toggle-menu' onClick={toggleMenu}>

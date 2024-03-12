@@ -11,35 +11,27 @@ function App() {
   const { theme, toggleTheme } = useTheme();
 
   useEffect(() => {
-    document.body.classList.remove('light-theme', 'dark-theme'); 
-    document.body.classList.add(`${theme}-theme`); 
+    document.body.classList.remove('light-theme', 'dark-theme');
+    document.body.classList.add(`${theme}-theme`);
     return () => {
       document.body.classList.remove(`${theme}-theme`);
     };
   }, [theme]);
 
   return (
-      <div className='App'>
+    <div className='App'>
       <BrowserRouter>
-
         <AnimatedCursor />
-        <Header />  
-      
-          <Routes>
-            <Route path="/" element={<Homepage />} />
-          </Routes>
-
-          <Routes>
-            <Route path="/workexperience" />
-          </Routes>
-
-          <Routes>
-            <Route path="/projects" />
-          </Routes>
-
+        <Header />
+        <Routes>
+          <Route path="/" element={<Homepage />} />
+          <Route path="/workexperience" />
+          <Route path="/projects" />
+          <Route path="/contact" />
+        </Routes>
         <SocialMedia />
-    </BrowserRouter>
-      </div>
+      </BrowserRouter>
+    </div>
   );
 }
 
