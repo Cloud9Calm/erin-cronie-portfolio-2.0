@@ -68,6 +68,12 @@
         border: none;
     }
 
+    &__connect-div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
     &__connect {
         font-family: $roboto-font;
         margin: 3rem 0;
@@ -78,7 +84,8 @@
 
     &__thank-you {
         font-family: $comfortaa-font;
-        margin: 2rem;
+        margin: 1rem;
+        text-align: center;
             @include tablet {
                 padding: 1rem 4rem;
                 margin: 0;
@@ -86,6 +93,11 @@
                 max-width: 35rem;
             }
 
+    }
+
+    &__svg {
+        width: 20rem;
+        margin: 0;
     }
 }
 
