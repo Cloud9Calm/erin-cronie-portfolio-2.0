@@ -2,7 +2,7 @@ import './ContactForm.scss';
 import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
 import ReCAPTCHA from 'react-google-recaptcha';
-import emailSVG from '../../assets/images/email.svg';
+import erinCronie from '../../assets/images/erin-cronie.jpg';
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -93,7 +93,7 @@ const ContactForm = () => {
         <h2 className='contact__connect title'>Let's Connect!</h2>
         <p className='contact__thank-you'>Thank you for visiting my portfolio! I'm always open to new opportunities, collaborations, and feedback. Interested in working together? Let's chat! Social media is linked below:</p>
       
-      <img src={emailSVG} className='contact__svg' alt="Cute cartoon email image" />
+      <img src={erinCronie} className='contact__svg' alt="Image of Erin Cronie" />
       </div>
     </section>
   );
