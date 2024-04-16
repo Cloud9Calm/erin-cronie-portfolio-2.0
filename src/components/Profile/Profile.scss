@@ -51,6 +51,21 @@
             }
     }
 
+    &__img-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 2rem;
+            @include tablet {
+                margin: 4rem;
+            }
+    }
+
+    &__img {
+        height: 25rem;
+        margin: 0 auto;
+    }
+
     &__info {
         font-family: $comfortaa-font;
         margin: 2rem;

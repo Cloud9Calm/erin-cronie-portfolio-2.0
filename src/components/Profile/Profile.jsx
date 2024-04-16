@@ -1,5 +1,6 @@
 import './Profile.scss';
 import Name from '../Name/Name'; 
+import erinCronieDesk from '../../assets/images/erin-cronie-desk.jpg';
 
 const Profile = () => {
     return (
@@ -12,6 +13,11 @@ const Profile = () => {
                 <h2 className='profile__title title-background title'>
                     More about my background
                 </h2>
+                
+                <div className="profile__img-section">
+                    <img class="profile__img" src={erinCronieDesk} alt="Erin Cronie sitting at her desk with computer screen" />
+                 
+                    
                     <p className='profile__info'>
                         Embarking on a transformation journey from the picturesque vineyards of the wine industry to the dynamic realm of technology was a leap of passion and reinvention. The pivotal moment arrived when I secured a role with Shopify and Shopify Plus Support, unveiling to me the fascinating world of code.
                     </p>
@@ -21,6 +27,7 @@ const Profile = () => {
                     <p className='profile__info'>    
                         The synergy of my background in the wine industry and newfound tech expertise has uniquely shaped my approach to problem-solving and innovation. Today, as I continue to navigate this thrilling intersection of creativity and technology, I find joy in crafting digital experiences that resonate with the same artistry and attention to detail as a perfectly aged vintage.
                     </p>
+                </div>  
             </div>
         </section>
     );

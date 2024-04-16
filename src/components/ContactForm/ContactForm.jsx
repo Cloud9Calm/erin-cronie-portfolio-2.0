@@ -93,7 +93,7 @@ const ContactForm = () => {
         <h2 className='contact__connect title'>Let's Connect!</h2>
         <p className='contact__thank-you'>Thank you for visiting my portfolio! I'm always open to new opportunities, collaborations, and feedback. Interested in working together? Let's chat! Social media is linked below:</p>
       
-      <img src={erinCronie} className='contact__svg' alt="Image of Erin Cronie" />
+      <img src={erinCronie} className='contact__img' alt="Image of Erin Cronie" />
       </div>
     </section>
   );

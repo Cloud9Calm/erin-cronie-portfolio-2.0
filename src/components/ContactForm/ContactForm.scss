@@ -33,7 +33,7 @@
                 align-items: flex-start;
                 margin: 4rem;
             }
-    }
+        }
 
     &__title {
         font-family: $roboto-font;
@@ -42,8 +42,8 @@
 
     &__name,
     &__email {
-        margin: .5rem;
-        padding: 1rem 10rem .25rem 0.25rem;
+        margin: 1rem;
+        padding: 1rem 10rem 1rem 1rem;
         @include form-border;
             @include tablet {
                 font-size: 1.5rem;
@@ -52,14 +52,13 @@
 
     &__message {
         margin: 1rem;
-        padding: 5rem 10rem 0 0.25rem;
+        padding: 10rem 10rem 1rem 1rem;
         @include form-border;
             @include tablet {
                 font-size: 1.5rem;
-                padding: 5rem 6rem 0 .25rem;
                 height: 30px;
             }
-    }
+        }
 
     &__button {
         border-radius: 50px;
@@ -80,7 +79,7 @@
             @include tablet {
                 margin: 4rem;
             }
-    }
+        }
 
     &__thank-you {
         font-family: $comfortaa-font;
@@ -93,18 +92,22 @@
                 max-width: 35rem;
             }
 
-    }
+        }
 
-    &__svg {
+    &__img {
         width: 20rem;
-        margin: 0;
-    }
+        margin: 1rem;
+            @include tablet {
+                width: 30rem;       
+            }
+        }
 }
 
 input[type="text"]::placeholder,
 input[name="email"]::placeholder,
 textarea::placeholder {
     color: white;
+   
 }
 
 
