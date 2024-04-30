@@ -7,8 +7,7 @@ const Profile = () => {
             <h2 className='projects__title title'>Projects</h2>
             <div className="projects__list">
                 <p className='projects__blurb'>
-                    I'm thrilled to share a sneak peek into some of the exciting projects I'm currently working on! While they're not yet available, I can't wait to unveil the innovative solutions and features they'll bring. Stay tuned for updates as I continue to refine and polish these projects to deliver the best possible experiences. Get ready to embark on an adventure filled with creativity, innovation, and endless possibilities!
-                </p>
+                I'm thrilled to announce that some of the exciting projects I've been working! Dive in and explore the innovative solutions and features they bring. Stay tuned for further updates as I continue to enhance and refine these projects to provide the best possible experiences. Get ready to embark on an adventure filled with creativity, innovation, and endless possibilities!                </p>
                 {projectsData.projects.map((project, index) => (
                     <div key={index} className="projects__list-items">
                         <h3 className='projects__name'>{project.title}</h3>
