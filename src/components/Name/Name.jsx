@@ -5,7 +5,7 @@ const Name = () => {
         <div className="container">
         <div className="row">
           <div className="col-md-12 text-center">
-            <h3 className="animate-charcter"> ERIN CRONIE</h3>
+            <h1 className="animate-charcter">ERIN CRONIE</h1>
           </div>
         </div>
       </div>
