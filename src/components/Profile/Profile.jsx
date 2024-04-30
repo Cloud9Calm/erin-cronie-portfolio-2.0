@@ -7,11 +7,10 @@ const Profile = () => {
         <section className='profile' id='top'>
             <div className='profile__name-title'>
                 <Name />
-                    <h4 className='profile__title'>Software Developer</h4>
             </div>
             <div className='profile__background'>
                 <h2 className='profile__title title-background title'>
-                    More about my background
+                    More about Erin's Background
                 </h2>
                 
                 <div className="profile__img-section">
