@@ -11,7 +11,7 @@ const SocialMedia = () => {
                 <li className='social-media__list-item'>
                     <a 
                         className='social-media__link'
-                        href="https://github.com/erincronie" 
+                        href="https://github.com/cloud9calm" 
                         target="_blank" 
                         rel="noopener noreferrer">
                             Find my GitHub
@@ -21,7 +21,7 @@ const SocialMedia = () => {
                 <li className='social-media__list-item'>
                     <a 
                         className='social-media__link'
-                        href="https://www.instagram.com/cloud9calm" 
+                        href="https://www.instagram.com/cloud9calmco" 
                         target="_blank" 
                         rel="noopener noreferrer">
                             Follow me on Instagram
