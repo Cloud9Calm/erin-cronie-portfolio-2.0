@@ -10,7 +10,7 @@
         "title": "Cloud9 Calm Co.",
         "url": "cloud9calm.com",
         "description": "A freelance project in progress: building a website for Cloud9 Calm Co., featuring custom designs and functionalities.",
-        "techStack": ["Node, React, Express.js, Sass, Heroku"]
+        "techStack": ["Node", "React", "Express.js", "Sass"," Heroku"]
     },
     {
         "title": "Shop Cloud9 Calm",
@@ -20,9 +20,9 @@
     },
     {
         "title": "Naramata Vineyard",
-        "url": "naramatavineyard.com",
+        "url": "naramatavineyardbnb.ca",
         "description": "An ongoing project: a Bed and Breakfast booking application for Naramata Vineyard.",
-        "techStack": ["JavaScript", "NextJS", "Google Calendar API, Express.js"]
+        "techStack": ["JavaScript", "NextJS", "Google Calendar API", "Express.js"]
     }
     ]
 }
