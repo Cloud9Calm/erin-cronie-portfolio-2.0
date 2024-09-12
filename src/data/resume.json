@@ -1,6 +1,6 @@
 {
     "name": "Erin Cronie",
-    "title": "Aspiring Software Engineer",
+    "title": "Business Owner and Website Developer",
     "contact": {
       "email": "erincronie@gmail.com"
     },
@@ -22,6 +22,12 @@
       }
     ],
     "experience": [
+      {
+        "jobTitle": "Sole Proprietor",
+        "company": "Cloud9 Calm Co.",
+        "duration": "March 2024",
+        "description": "Cloud9 Calm Co. is a business focused on providing affordable, professional web development services to small businesses and entrepreneurs. Specializing in platforms like Shopify, Squarespace, and Wix, I create user-friendly, SEO-optimized websites designed to help clients grow their online presence. Whether it’s setting up an eCommerce store or optimizing an existing site, my goal is to deliver solutions that drive success while offering a calm, personalized experience for each project."
+      },
       {
         "jobTitle": "Software Developer Teacher's Assistant",
         "company": "BrainStation",

@@ -22,7 +22,7 @@
         "title": "Naramata Vineyard",
         "url": "naramatavineyard.com",
         "description": "An ongoing project: a Bed and Breakfast booking application for Naramata Vineyard.",
-        "techStack": ["JavaScript", "NextJS", "Google Cloud Deployment"]
+        "techStack": ["JavaScript", "NextJS", "Google Calendar API, Express.js"]
     }
     ]
 }
