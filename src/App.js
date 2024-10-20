@@ -5,9 +5,9 @@ import { useTheme } from './scripts/ThemeContext';
 import AnimatedCursor from "react-animated-cursor";
 import Header from './components/Header/Header';
 import SocialMedia from './components/SocialMedia/SocialMedia';
-import Homepage from './pages/Homepage';
-import WorkExperience from './pages/WorkExperience';
-import Projects from './pages/Projects';
+import Homepage from './components/Homepage';
+import WorkExperience from './components/WorkExperience';
+import Projects from './components/Projects';
 import ContactForm from './components/ContactForm/ContactForm';
 
 function App() {
