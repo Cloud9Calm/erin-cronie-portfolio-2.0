@@ -13,14 +13,14 @@ const Homepage = () => {
     "url": "https://www.erincronie.me",
     "sameAs": [
       "https://www.linkedin.com/in/erincronie/",
-      "https://github.com/erincronie"
+      "https://github.com/cloud9calm"
     ],
     "worksFor": {
       "@type": "Organization",
       "name": "Cloud9 Calm Co."
     },
     "description": "Erin Cronie is a software developer specializing in web development, e-commerce, and SEO.",
-    "image": "https://www.erincronie.me/path-to-image.jpg"
+    "image": "https://erincronie.me/static/media/erin-cronie.2f7fa6d22fa582d16a92.jpg"
   };
 
   return (
@@ -45,7 +45,7 @@ const Homepage = () => {
         />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://www.erincronie.me" />
-        <meta property="og:image" content="https://www.erincronie.me/path-to-image.jpg" />
+        <meta property="og:image" content="https://erincronie.me/static/media/erin-cronie.2f7fa6d22fa582d16a92.jpg" />
         <meta property="og:site_name" content="Erin Cronie - Software Developer" />
 
         <meta name="twitter:card" content="summary_large_image" />
@@ -54,8 +54,8 @@ const Homepage = () => {
           name="twitter:description"
           content="Erin Cronie is a software developer with expertise in web development, e-commerce solutions, and SEO."
         />
-        <meta name="twitter:image" content="https://www.erincronie.me/path-to-image.jpg" />
-        <meta name="twitter:site" content="@yourTwitterHandle" />
+        <meta name="twitter:image" content="	https://erincronie.me/static/media/erin-cronie.2f7fa6d22fa582d16a92.jpg" />
+        <meta name="twitter:site" content="@cloud9calmco" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
 
         <script type="application/ld+json">

@@ -6,6 +6,9 @@ import AnimatedCursor from "react-animated-cursor";
 import Header from './components/Header/Header';
 import SocialMedia from './components/SocialMedia/SocialMedia';
 import Homepage from './pages/Homepage';
+import WorkExperience from './pages/WorkExperience';
+import Projects from './pages/Projects';
+import ContactForm from './components/ContactForm/ContactForm';
 
 function App() {
   const { theme, toggleTheme } = useTheme();
@@ -23,11 +26,11 @@ function App() {
       <BrowserRouter>
         <AnimatedCursor />
         <Header />
-        <Homepage />
         <Routes>
-          <Route path="/workexperience" />
-          <Route path="/projects" />
-          <Route path="/contact" />
+          <Route path="/" element={<Homepage />} />
+          <Route path="/workexperience" element={<WorkExperience />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/contact" element={<ContactForm />} />
         </Routes>
         <SocialMedia />
       </BrowserRouter>
