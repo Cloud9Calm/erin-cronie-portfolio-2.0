@@ -7,10 +7,10 @@ import AnimatedCursor from "react-animated-cursor";
 
 import Homepage from './pages/Homepage';
 
-import Header from './components/Header/Header';
+import Header from './components/Header/Header';    
 import SocialMedia from './components/SocialMedia/SocialMedia';
-import WorkExperience from './components/WorkExperience';
-import Projects from './components/Projects';
+import WorkExperience from './components/WorkExperience/WorkExperience';
+import Projects from './components/Projects/Projects';
 import ContactForm from './components/ContactForm/ContactForm';
 
 function App() {
