@@ -1,11 +1,14 @@
 import '../src/styles/partials/_global.scss';
+
 import { useEffect } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { useTheme } from './scripts/ThemeContext';
 import AnimatedCursor from "react-animated-cursor";
+
+import Homepage from './pages/Homepage';
+
 import Header from './components/Header/Header';
 import SocialMedia from './components/SocialMedia/SocialMedia';
-import Homepage from './components/Homepage';
 import WorkExperience from './components/WorkExperience';
 import Projects from './components/Projects';
 import ContactForm from './components/ContactForm/ContactForm';
