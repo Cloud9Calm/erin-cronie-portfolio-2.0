@@ -17,18 +17,19 @@
     font-family: $comfortaa-font;
     @include flex-column;
     align-items: center;
-    justify-content: space-between;
-    position: sticky;
-    top: 0;
-    z-index: 10;
+    justify-content: space-between;      
     backdrop-filter: blur(10px);
-        @include desktop {
+        @include tablet {
             flex-direction: row;
             height: 100px;
+            position: sticky;
+            top: 0;
+            z-index: 10;
         }
 
     &__toggle-menu {
         border: none;
+        border-radius: 1000px;
         @include header-link;
             @include desktop {
                 display: none;
@@ -47,6 +48,11 @@
             @include desktop {
                 display: contents;
             }
+    }
+
+    &__nav-section {
+        display: flex;
+        align-items: center;
     }
 
     &__info {

@@ -10,7 +10,7 @@ const links = [
 const sitemap = new SitemapStream({ hostname: 'https://www.erincronie.me/' });
 
 streamToPromise(sitemap).then((data) => {
-  createWriteStream('./public/sitemap.xml').end(data);  // Updated path
+  createWriteStream('./public/sitemap.xml').end(data); 
   console.log('Sitemap generated!');
 });
 
