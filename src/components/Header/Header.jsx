@@ -25,15 +25,16 @@ const Header = () => {
         <header className='header'>
             <div className='header__info'>
                 <h2 className='header__title title'>
-                    Welcome
+                    Welcome to
                 </h2>
                 <li className='header__nav-item'>
-                    <Link to="/" onClick={() => scrollToSection('top')} aria-label="erincronie.e">erincronie.me</Link>
+                    <Link to="/" onClick={() => scrollToSection('top')} aria-label="erincronie.me">erincronie.me</Link>
                 </li>
             </div>
             <button className='header__toggle-menu' onClick={toggleMenu}>
                 Menu
             </button>
+            <div className='header__nav-buttons'>
             {isMenuOpen && (
                 <nav className='header__nav-1'>
                     <ul className='header__nav-list'>
@@ -65,6 +66,7 @@ const Header = () => {
             <button className='header__button' onClick={toggleTheme} aria-label="Toggle Theme">
                 {theme === 'light' ? <LightModeIcon className="header__theme-icon" /> : <DarkModeIcon className="header__theme-icon"  />}
             </button>
+            </div>
         </header>
     );
 }

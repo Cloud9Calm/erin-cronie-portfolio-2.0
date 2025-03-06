@@ -1,7 +1,6 @@
 import Profile from '../components/Profile/Profile';
 import WorkExperience from '../components/WorkExperience/WorkExperience';
 import Projects from '../components/Projects/Projects';
-import ContactForm from '../components/ContactForm/ContactForm';
 
 const Homepage = () =>  {
   return (
@@ -9,7 +8,6 @@ const Homepage = () =>  {
       <Profile />
       <WorkExperience />
       <Projects />
-      <ContactForm />
     </section>
   );
 }

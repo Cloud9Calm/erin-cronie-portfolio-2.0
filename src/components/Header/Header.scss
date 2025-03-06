@@ -29,10 +29,17 @@
 
     &__toggle-menu {
         border: none;
+        border-radius: 100px;
         @include header-link;
             @include desktop {
                 display: none;
             }
+    }
+
+    &__nav-buttons {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
     }
 
     &__nav-1 {
@@ -79,6 +86,7 @@
 
     &__nav-item {
        @include header-link;
+        text-align: center;
     }
 
     &__button {
@@ -91,11 +99,11 @@
         width: 20px;
         margin: 1rem;
             @include tablet {
-                height: 60px;
-                width: 60px;
+                height: 40px;
+                width: 40px;
                     @include desktop {
-                        height: 80px;
-                        width: 80px
+                        height: 60px;
+                        width: 60px
                     }
             }
     }
