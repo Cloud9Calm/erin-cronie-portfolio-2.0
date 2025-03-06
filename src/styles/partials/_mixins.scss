@@ -56,3 +56,15 @@
   color: #{$text-color-dark};
   background-color: $background-color-dark;
 }
+
+@mixin main-title-fonts {
+  font-family: $comfortaa-font;
+  font-size: 2rem;
+  
+}
+
+@mixin body-fonts {
+  font-family: $roboto-font;
+  font-size: 1.5rem;
+  line-height: 3rem;
+}

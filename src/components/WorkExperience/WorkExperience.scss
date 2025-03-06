@@ -17,6 +17,10 @@
             margin: 4rem 0;
         }
 
+    &__title {
+        @include main-title-fonts;
+    }
+
     &__button-section {
         @include flex-column;
         justify-content: flex-start;

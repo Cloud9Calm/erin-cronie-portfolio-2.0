@@ -1,6 +1,6 @@
 import './Profile.scss';
 import Name from '../Name/Name'; 
-import erinCronieDesk from '../../assets/images/erin-cronie-desk.jpg';
+import erinCronieDesk from '../../assets/images/profileimg.jpg';
 
 const Profile = () => {
     return (
@@ -18,13 +18,13 @@ const Profile = () => {
                  
                     
                     <p className='profile__info'>
-                        Embarking on a transformation journey from the picturesque vineyards of the wine industry to the dynamic realm of technology was a leap of passion and reinvention. The pivotal moment arrived when I secured a role with Shopify and Shopify Plus Support, unveiling to me the fascinating world of code.
+                        Embarking on a <i>transformation journey</i> from the <b>picturesque vineyards</b> of the wine industry to the <b>dynamic realm of technology</b> was a leap of <i>passion</i> and <i>reinvention</i>. The pivotal moment arrived when I <b><u>secured a role with Shopify and Shopify Plus Support</u></b>, unveiling to me the <i>fascinating world of code</i>.
                     </p>
                     <p className='profile__info'>   
-                        Navigating the complexities of e-commerce and digital solutions, my role at Shopify became the catalyst for a profound shift in my career trajectory. Through dedicated support, mentorship, and hands-on experiences, I not only embraced the language of code but also discovered a profound love for the intricacies of web development.
+                        Navigating the <b>complexities of e-commerce</b> and <b>digital solutions</b>, my role at Shopify became the <b><i>catalyst</i></b> for a <i>profound shift</i> in my career trajectory. Through <i>dedicated support, mentorship,</i> and <i>hands-on experiences</i>, I not only <b><u>embraced the language of code</u></b> but also <i>discovered a profound love</i> for the <b>intricacies of web development</b>.
                     </p>
                     <p className='profile__info'>    
-                        The synergy of my background in the wine industry and newfound tech expertise has uniquely shaped my approach to problem-solving and innovation. Today, as I continue to navigate this thrilling intersection of creativity and technology, I find joy in crafting digital experiences that resonate with the same artistry and attention to detail as a perfectly aged vintage.
+                        The <b>synergy</b> of my background in the <b>wine industry</b> and <b>newfound tech expertise</b> has uniquely shaped my approach to <i>problem-solving</i> and <i>innovation</i>. Today, as I continue to navigate this <i>thrilling intersection</i> of <b>creativity and technology</b>, I find joy in <b><u>crafting digital experiences</u></b> that resonate with the same <b>artistry</b> and <i>attention to detail</i> as a <b><i>perfectly aged vintage</i></b>.
                     </p>
                 </div>  
             </div>

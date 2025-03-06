@@ -33,6 +33,7 @@
     animation: textclip 15s linear infinite;
     display: inline-block;
     font-size: 2rem;
+    font-family: $comfortaa-font;
     text-align: center;
         @include tablet {
             font-size: 5rem;
